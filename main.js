@@ -2,7 +2,7 @@ const slideGallery = document.querySelector(".imagenes");
 const slides = slideGallery.querySelectorAll("li");
 const thumbnailContainer = document.querySelector(".thumbnails");
 const slideCount = slides.length;
-const slideWidth = 340;
+const slideWidth = 750;
 
 const highlightThumbnail = () => {
   thumbnailContainer

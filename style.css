@@ -1,3 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@200&display=swap');
+
+
+@supports (font-variation-settings: normal) {
+  html {
+    font-family: 'Karla', sans-serif;
+  }
+}
+
 *,
 *::before,
 *::after {
@@ -14,6 +23,7 @@ p,
 figure,
 picture {
   margin: 0;
+  font-family: 'Karla', sans-serif;
 }
 
 body {
@@ -54,6 +64,9 @@ body {
 .home {
   height: 100vh;
   display: grid;
+  grid-template-rows: auto 1fr auto;
+  max-height: 100vh;
+  ;
 }
 
 .container {
@@ -88,7 +101,7 @@ body {
   display: grid;
   grid-auto-flow: column;
   gap: 1rem;
-  width: 240px;
+  width: 700px;
   padding: 0 0.25rem;
   overflow-y: auto;
   overscroll-behavior-x: contain;
@@ -96,19 +109,43 @@ body {
   scrollbar-width: none;
 }
 
-.imagenes > li {
+.imagenes>li {
   scroll-snap-align: start;
 }
 
 .imagenes li img {
-  min-width: 240px;
-  height: 340px;
+  min-width: 700px;
+  height: 400px;
   object-fit: contain;
   object-position: center;
+}
+
+.imagenes li p {
+  padding-top: 2rem;
+  text-align: center;
 }
 
 .imagenes::-webkit-scrollbar {
   display: none;
 }
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  padding-top: 35px;
+
+}
+
+.description {
+  text-align: center;
+  padding: 20px;
+}
+
+* {
+  font-size: 20px !important;
+}
+
+
 
 /* Inspirado en: https://www.30secondsofcode.org/css/s/horizontal-gallery */
