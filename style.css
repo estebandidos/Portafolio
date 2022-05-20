@@ -155,3 +155,8 @@ body {
 }
 
 /* Inspirado en: https://www.30secondsofcode.org/css/s/horizontal-gallery */
+
+/* Info */
+.info .home {
+  background: rgb(124, 124, 142);
+}
