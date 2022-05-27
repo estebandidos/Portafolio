@@ -78,7 +78,7 @@
  }
  
  .logo {
-   height:40px;
+   height: 40px;
  }
  
  .nav ul {
@@ -111,12 +111,12 @@
  
  .main article:nth-child(1) {
    background-color: #DDDDDD;
-     width: 400px;
+   width: 400px;
  }
  
  .main article:nth-child(2) {
    background-color: #DDDDDD;
-     width: 300px;
+   width: 300px;
  }
  
  .main article:nth-child(3) {
@@ -133,11 +133,12 @@
  }
  
  .main article p {
- font-size: 20px;
+   font-size: 20px;
  }
  
  .lista {
    display: grid;
+   min-height: 100vh;
  }
  
  .lista li {
@@ -145,18 +146,19 @@
    align-items: center;
    justify-content: space-between;
    padding-inline: 30px;
-   padding-block: 20px;    
+   padding-block: 20px;
+   outline: solid 1px;
  }
  
  
- .about{
+ .about {
    background-color: #000000;
    color: white;
-     padding-inline: 30px;
-     padding-block: 20px;
+   padding-inline: 30px;
+   padding-block: 20px;
  }
  
- .contat {
+ .contact {
    background-color: #000000;
    color: white;
    padding-inline: 30px;
