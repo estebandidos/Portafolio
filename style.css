@@ -14,6 +14,19 @@
    box-sizing: border-box;
  }
  
+ /* Imagenes */
+ :root {
+   --img-chucho: url("https://res.cloudinary.com/dagxizffr/image/upload/v1654008504/IMG_4430_h9j4pu.png");
+   /* --img-chucho: url("https://res.cloudinary.com/dagxizffr/image/upload/v1654008504/IMG_4430_h9j4pu.png");
+    --img-chucho: url("https://res.cloudinary.com/dagxizffr/image/upload/v1654008504/IMG_4430_h9j4pu.png");
+    --img-chucho: url("https://res.cloudinary.com/dagxizffr/image/upload/v1654008504/IMG_4430_h9j4pu.png");
+    --img-chucho: url("https://res.cloudinary.com/dagxizffr/image/upload/v1654008504/IMG_4430_h9j4pu.png"); */
+ }
+ 
+ html {
+   scroll-behavior: smooth;
+ }
+ 
  body,
  h1,
  h2,
@@ -53,6 +66,7 @@
  a {
    /* color: white; */
    text-decoration: none;
+   color: #000000;
  }
  
  
@@ -63,12 +77,24 @@
    --white: #ffffff;
    --font-system: -apple-system, sans-serif;
  }
- a:hover {
+ 
+ a:hover p {
+   font-style: oblique;
  }
  
  /* Base */
  
+ a .header {
+   background-color: white;
+ }
+ 
  .header {
+   background-color: white;
+ }
+ 
+ .header {
+   position: sticky;
+   top: 0;
    height: 30px;
    display: flex;
    align-items: center;
@@ -76,11 +102,10 @@
    padding-inline: 30px;
    padding-block: 20px;
    border-bottom: solid 1px;
- 
  }
  
- .header:hover {
- background-color: plum;
+ .header:hover li {
+   font-style: oblique;
  }
  
  
@@ -107,13 +132,21 @@
    padding-left: 12px;
  }
  
- .main {
+ /* .main {
    width: auto;
    margin: 30px;
    display: flex;
    row-gap: 15px;
    column-gap: 20px;
    font-size: 15px;
+ } */
+ .main {
+   width: auto;
+     margin: 30px;
+     display: flex;
+     row-gap: 15px;
+     column-gap: 20px;
+     font-size: 15px;
  }
  
  .main article {
@@ -125,13 +158,9 @@
    overflow: hidden;
  }
  
- .main article:nth-child(1) {
- }
+ .main article:nth-child(1) {}
  
- .main article:nth-child(2) {
- width: 100%;
- 
- }
+ .main article:nth-child(2) {}
  
  .main article:nth-child(3) {
    border-top-left-radius: 0;
@@ -140,8 +169,8 @@
  
  
  .main article img {
-   max-width: 100%;
-   display: block;
+   object-fit: cover;
+     height: 100%;
  }
  
  .main article p {
@@ -166,30 +195,52 @@
  }
  
  
+ 
  .lista li {
    height: 30px;
-     display: flex;
-     align-items: center;
-     justify-content: space-between;
-     padding-inline: 30px;
-     padding-block: 20px;
-     border-bottom: solid 1px;;
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   padding-inline: 30px;
+   padding-block: 20px;
+   border-bottom: solid 1px;
+   ;
  
  }
  
  .lista li h2 {
    font-size: 15px;
    font-weight: 400;
-   
+ 
  }
  
- .section-title{
-     background-color:black;
+ .lista:hover a {
+   font-style: oblique;
+ }
+ 
+ .gallery-title {
+   background-color: #DDDDDD;
+ 
+ }
+ 
+ .gallery-title li {
+   height: 30px;
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   padding-inline: 30px;
+   padding-block: 20px;
+   border-bottom: solid .5px;
+ 
+ }
+ 
+ .section-title {
+   background-color: black;
  
  }
  
  .section-title li {
- height: 30px;
+   height: 30px;
    display: flex;
    align-items: center;
    justify-content: space-between;
@@ -199,42 +250,45 @@
    color: white;
  }
  
+ .gallery-title h2,
  .section-title h2 {
    font-size: 15px;
    font-weight: 400;
-   
+ 
  }
  
  .section {
    background-color: #000000;
    color: white;
-     padding-inline: 30px;
-     padding-block: 20px;
-     border-bottom: solid .5px;
+   padding-inline: 30px;
+   padding-block: 20px;
+   border-bottom: solid .5px;
  
  }
  
- .section li+li {
- }
+ .section li+li {}
  
  .section li h2 {
    font-size: 15px;
    font-weight: 400;
  }
  
- .contact {
+ .info {
    background-color: #000000;
    color: white;
    padding-inline: 30px;
    padding-block: 20px;
    border-top: solid .5px;
+   border-bottom: solid .5px;
  }
  
- .contact li h2 {
-   font-size: 15px;
-   font-weight: 400;
+ .me {
+   width: 100vw;
+ }
  
- 
+ .me img {
+   object-fit: cover;
+   width: 100vw;
  }
  
  .footer {
@@ -249,7 +303,10 @@
  }
  
  .project-title {
+   position: sticky;
+   top: 41px;
    background-color: #DDDDDD;
+   border-top: solid 1px;
  
  }
  
@@ -277,11 +334,25 @@
    flex: 1;
  }
  
+ .project-intro article {
+   height: 64vh;
+   object-fit: cover;
+   height: 100%;
+ }
+ 
+ /*.project-intro article {
+ background-image: var(--img-chucho);
+   background-size: cover;
+   background-position: top center;
+   background-repeat: no-repeat;
+ }
+ */
  @media screen and (max-width: 700px) {
    .project-intro {
      display: block;
    }
  }
+ 
  
  
  
@@ -293,5 +364,9 @@
    background-color: black;
    display: grid;
    grid-template-columns: auto auto;
+ }
+ 
+ .gallery img {
+   border: .5px solid;
  }
  
