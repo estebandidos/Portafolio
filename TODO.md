@@ -4,12 +4,12 @@ Organización de tareas por completar para terminar el proyecto portafolio.
 
 ### Todo
 
-- [ ] Actualizar la descripción alt de las imágenes
-      https://github.com/estebandidos/portafolio/blob/0bb06f086f233332b96c1ddf127f48a3488adf7b/index.html#L23-L52
-- [ ] Actualizar enlaces externos a referencias no rotas
-      https://github.com/estebandidos/portafolio/blob/0bb06f086f233332b96c1ddf127f48a3488adf7b/index.html#L62
+- [ ] Poner descripcion alternativa a imagenes
+      https://github.com/SarahJuarez/portafolio/blob/da725d1bde0f8464f458dab698e474ebbf9c2074/index.html#L30-L34
+- [ ] Optimizar imágenes para web
+- [ ] Revisar accesibilidad de colores del menú y en general en el proyecto
 - [ ] Crear un favicon.ico y ponerlo en la cabeza del documento
-      https://github.com/estebandidos/portafolio/blob/0bb06f086f233332b96c1ddf127f48a3488adf7b/index.html#L5-L10
+      https://github.com/SarahJuarez/portafolio/blob/da725d1bde0f8464f458dab698e474ebbf9c2074/index.html#L5-L13
 - [ ] Crear markup/formato de una sección pendiente
 
 ### En proceso
